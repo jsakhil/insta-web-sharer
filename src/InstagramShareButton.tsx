@@ -18,6 +18,8 @@ const InstagramShareButton: React.FC<InstagramShareButtonProps> = ({ imageUrl, c
                         mimeType: 'image/jpg'
                     };
                     await navigator.share(shareData);
+                }else{
+                    console.error('Invalid image url and caption.');
                 }
             } catch (error) {
                 console.error('Error sharing:', error);

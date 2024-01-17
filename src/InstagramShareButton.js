@@ -47,10 +47,10 @@ var InstagramShareButton = function (_a) {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    if (!navigator.share) return [3 /*break*/, 6];
+                    if (!navigator.share) return [3 /*break*/, 7];
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 4, , 5]);
+                    _a.trys.push([1, 5, , 6]);
                     if (!(imageUrl != '' && caption != '')) return [3 /*break*/, 3];
                     shareData = {
                         title: caption,
@@ -62,17 +62,20 @@ var InstagramShareButton = function (_a) {
                     return [4 /*yield*/, navigator.share(shareData)];
                 case 2:
                     _a.sent();
-                    _a.label = 3;
-                case 3: return [3 /*break*/, 5];
-                case 4:
+                    return [3 /*break*/, 4];
+                case 3:
+                    console.error('Invalid image url and caption.');
+                    _a.label = 4;
+                case 4: return [3 /*break*/, 6];
+                case 5:
                     error_1 = _a.sent();
                     console.error('Error sharing:', error_1);
-                    return [3 /*break*/, 5];
-                case 5: return [3 /*break*/, 7];
-                case 6:
+                    return [3 /*break*/, 6];
+                case 6: return [3 /*break*/, 8];
+                case 7:
                     console.warn('Web Share API not supported');
-                    _a.label = 7;
-                case 7: return [2 /*return*/];
+                    _a.label = 8;
+                case 8: return [2 /*return*/];
             }
         });
     }); };
