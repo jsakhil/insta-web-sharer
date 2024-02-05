@@ -18,9 +18,19 @@ Install my-project with npm
 import InstagramShareButton from 'insta-web-sharer'
 
 function App() {
-  return <InstagramShareButton imageUrl={'image-url-here'} caption={'caption'} />
+  return <InstagramShareButton imageUrl={'image-url-here'} caption={'caption'} color={'#fff'} />
 }
 ```
+
+## Options
+
+| Option            | Usage                               |
+| ----------------- | ----------------------------------- |
+| imageUrl          | URL of image to share on instagram  |
+| caption           | Caption to share on instagram       |
+| color             | Color of instagram icon             |
+
+
 
 
 ## Feedback
