@@ -39,4 +39,4 @@ const InstagramShareButton: React.FC<InstagramShareButtonProps> = ({ imageUrl, c
     );
 };
 
-export default InstagramShareButton;
+module.exports = { InstagramShareButton };

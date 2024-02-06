@@ -1,6 +1,6 @@
 {
   "name": "insta-web-sharer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "homepage": "https://github.com/jsakhil/insta-web-sharer",
   "main": "index.js",
@@ -18,5 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16"
   }
 }
